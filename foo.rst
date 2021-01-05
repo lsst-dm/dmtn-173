@@ -1,60 +1,10 @@
-..
-  Technote content.
-
-  See https://developer.lsst.io/restructuredtext/style.html
-  for a guide to reStructuredText writing.
-
-  Do not put the title, authors or other metadata in this document;
-  those are automatically added.
-
-  Use the following syntax for sections:
-
-  Sections
-  ========
-
-  and
-
-  Subsections
-  -----------
-
-  and
-
-  Subsubsections
-  ^^^^^^^^^^^^^^
-
-  To add images, add the image file (png, svg or jpeg preferred) to the
-  _static/ directory. The reST syntax for adding the image is
-
-  .. figure:: /_static/filename.ext
-     :name: fig-label
-
-     Caption text.
-
-   Run: ``make html`` and ``open _build/html/index.html`` to preview your work.
-   See the README at https://github.com/lsst-sqre/lsst-technote-bootstrap or
-   this repo's README for more info.
-
-   Feel free to delete this instructional comment.
-
-:tocdepth: 1
-
-.. Please do not modify tocdepth; will be fixed when a new Sphinx theme is shipped.
-
-.. sectnum::
-
-.. TODO: Delete the note below before merging new content to the master branch.
-
-.. note::
-
-   **This technote is not yet published.**
-
 Context
 =======
 
 The report of the Observatory Electronic Logging Working Group Report
 identifies a number of requirements to support the exchange of
 information between the different technical teams and operations
-xdepartments during the commissioning and the operation of the
+departments during the commissioning and the operation of the
 observatory.
 
 This document proposes an architecture and implementation approach that
@@ -76,13 +26,8 @@ three categories:
 There are also two “global” requirements for availability that we will
 come to later (see Networked Architecture).
 
-
-.. figure:: /_static/wg.png
-    :name: wg-label
-
-
-    Illustration of the areas of the Working Group concern. 
-
+.. figure:: https://paper-attachments.dropbox.com/s_36FBA81ADAD2C041729337453A7093D5EF09D8FC5CB2678BABCF046FE969FF6B_1608020626305_image.png
+   :alt: 
 
 While LSE-490 purports to describe a logging “system”, the servicing of
 the requirements listed in fact involves a number of observatory
@@ -127,12 +72,8 @@ Participants in the Observatory Logging Ecosystem are:
    this data
 -  A&A service(s) for any UIs that require them
 
-
-.. figure:: /_static/ole.png
-    :name: ole-label
-
-    Overview of the proposed OLE architecture
-
+.. figure:: https://paper-attachments.dropbox.com/s_36FBA81ADAD2C041729337453A7093D5EF09D8FC5CB2678BABCF046FE969FF6B_1608045717289_image.png
+   :alt: 
 
 Some of these participants are reasonably mature systems that already
 provide APIs to make their data available (eg EFD); others are not
@@ -184,11 +125,8 @@ relevant T/CAM would be.
 Observatory Wide Logbook
 ========================
 
-.. figure:: /_static/owl_arch.png
-    :name: owlarch-label
-    :target: http://target.link/url
-
-    OWL provisional architecture
+.. figure:: https://paper-attachments.dropbox.com/s_36FBA81ADAD2C041729337453A7093D5EF09D8FC5CB2678BABCF046FE969FF6B_1608044675910_image.png
+   :alt: 
 
 Networked Architecture
 ======================
@@ -233,14 +171,3 @@ deployment infrastructure (which would be wise), the A&A requirements in
 LSE-490 can easily be fulfilled.
 
 LOVE authentication happens via (??)
-
-
-.. Add content here.
-.. Do not include the document title (it's automatically added from metadata.yaml).
-
-.. .. rubric:: References
-
-.. Make in-text citations with: :cite:`bibkey`.
-
-.. .. bibliography:: local.bib lsstbib/books.bib lsstbib/lsst.bib lsstbib/lsst-dm.bib lsstbib/refs.bib lsstbib/refs_ads.bib
-..    :style: lsst_aa
